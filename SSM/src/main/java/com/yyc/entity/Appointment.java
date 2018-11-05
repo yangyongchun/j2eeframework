@@ -7,7 +7,7 @@ public class Appointment {
 	private long bookId;
 	private long studentId;
 	private Date appointTime;
-	
+	private Book book;
 	public long getBookId() {
 		return bookId;
 	}
@@ -32,8 +32,17 @@ public class Appointment {
 		this.appointTime = appointTime;
 	}
 
+	public Book getBook() {
+		return book;
+	}
+
+	public void setBook(Book book) {
+		this.book = book;
+	}
+
 	@Override
 	public String toString() {
-		return "Appointment [bookId=" + bookId + ", studentId=" + studentId + ", appointTime=" + appointTime + "]";
+		return "Appointment [bookId=" + bookId + ", studentId=" + studentId + ", appointTime=" + appointTime + ", book="
+				+ book + "]";
 	}
 }
